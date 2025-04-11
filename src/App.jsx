@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthPage from "./pages/AuthPage"; // adjust path as needed
 import Home from "./pages/Home";
 import AllVendors from "./pages/AllVendors";
+import Portfolio from "./pages/portfolio";
 import Footer from "./components/Footer";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/login" element={<AuthPage type="login" />} />
           <Route path="/signup" element={<AuthPage type="signup" />} />
           <Route path="/vendors" element={<AllVendors />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
         <Footer />
       </div>
